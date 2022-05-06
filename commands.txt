@@ -1,0 +1,15 @@
+yarn add --dev @nrwl/next
+yarn add -D @nrwl/node
+yarn add --dev msw
+
+nx g @nrwl/next:app maria
+
+nx g @nrwl/next:page home --project=maria
+
+nx generate @nrwl/react:lib shared-button
+
+nx format:write
+
+nx g @nrwl/node:application mock
+
+yarn msw init apps/mock/src

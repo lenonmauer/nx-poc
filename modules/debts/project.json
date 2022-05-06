@@ -1,0 +1,22 @@
+{
+  "sourceRoot": "modules/debts/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["modules/debts/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/modules/debts"],
+      "options": {
+        "jestConfig": "modules/debts/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

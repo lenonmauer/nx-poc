@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "projects": {
+    "core": "modules/core",
+    "credit": "modules/credit",
+    "debts": "modules/debts",
+    "home": "modules/home",
+    "maria": "apps/maria",
+    "maria-e2e": "apps/maria-e2e"
+  }
+}

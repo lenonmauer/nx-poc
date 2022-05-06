@@ -1,0 +1,64 @@
+{
+  "npmScope": "nx-poc",
+  "affected": {
+    "defaultBase": "main"
+  },
+  "cli": {
+    "defaultCollection": "@nrwl/react"
+  },
+  "workspaceLayout": {
+    "libsDir": "modules"
+  },
+  "implicitDependencies": {
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    ".eslintrc.json": "*"
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/nx-cloud",
+      "options": {
+        "cacheableOperations": [
+          "build",
+          "lint",
+          "test",
+          "e2e"
+        ],
+        "accessToken": "NmIxYTY5MzAtNThhOS00YzhiLWE1NDUtZWMwNjgyYmNjMGVmfHJlYWQtd3JpdGU="
+      }
+    }
+  },
+  "targetDependencies": {
+    "build": [
+      {
+        "target": "build",
+        "projects": "dependencies"
+      }
+    ]
+  },
+  "generators": {
+    "@nrwl/react": {
+      "application": {
+        "style": "styled-jsx",
+        "linter": "eslint",
+        "babel": true
+      },
+      "component": {
+        "style": "styled-jsx"
+      },
+      "library": {
+        "style": "styled-jsx",
+        "linter": "eslint"
+      }
+    },
+    "@nrwl/next": {
+      "application": {
+        "style": "styled-jsx",
+        "linter": "eslint"
+      }
+    }
+  },
+  "defaultProject": "maria"
+}

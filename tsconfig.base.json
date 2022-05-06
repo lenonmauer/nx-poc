@@ -1,0 +1,25 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@maria/core": ["modules/core/src/index.ts"],
+      "@maria/credit": ["modules/credit/src/index.ts"],
+      "@maria/debts": ["modules/debts/src/index.ts"],
+      "@maria/home": ["modules/home/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
